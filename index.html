@@ -16,10 +16,6 @@
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Contact Us</a></li>
 			</ul>
-			<form>
-				<input type="text" placeholder="Search...">
-				<button type="submit">Go</button>
-			</form>
 		</nav>
 	</header>
 	<main>
@@ -31,8 +27,15 @@
 				<a href="#" class="button">Applications</a>
 				<a href="#" class="button">About Us</a>
 				<a href="#" class="button">Contact Us</a>
+				<button class="button" onclick="downloadApps()">Download Apps</button>
 			</div>
 		</section>
 	</main>
+
+	<script>
+		function downloadApps() {
+			alert("Downloading apps...");
+		}
+	</script>
 </body>
 </html>

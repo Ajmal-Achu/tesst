@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mod Applications</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Applications</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+			<form>
+				<input type="text" placeholder="Search...">
+				<button type="submit">Go</button>
+			</form>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Latest Applications</h2>
+			<ul>
+				<li>
+					<h3>Application 1</h3>
+					<p>Description of Application 1</p>
+					<button class="like" onclick="addLike(this)">Like</button>
+					<span class="like-count">0</span>
+				</li>
+				<li>
+					<h3>Application 2</h3>
+					<p>Description of Application 2</p>
+					<button class="like" onclick="addLike(this)">Like</button>
+					<span class="like-count">0</span>
+				</li>
+				<li>
+					<h3>Application 3</h3>
+					<p>Description of Application 3</p>
+					<button class="like" onclick="addLike(this)">Like</button>
+					<span class="like-count">0</span>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<script>
+		function addLike(button) {
+			var countSpan = button.nextElementSibling;
+			var count = parseInt(countSpan.textContent);
+			countSpan.textContent = count + 1;
+		}
+	</script>
+</body>
+</html>
